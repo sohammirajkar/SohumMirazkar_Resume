@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soham Mirajkar — Resume</title>
+    <meta name="description" content="Investment-banking-focused resume for Soham Mirajkar" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root{--bg:#0b0d10;--muted:#111418;--ink:#f5f6f7;--sub:#c3c8d0;--accent:#9ae6b4;--card:#0f1216}
+      *{box-sizing:border-box}
+      html,body,#root{height:100%}
+      body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5}
+      a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--sub)}
+      a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+      .container{max-width:920px;margin:0 auto;padding:32px}
+      .header{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+      .name{font-size:36px;font-weight:700;letter-spacing:.3px}
+      .title{font-weight:600;color:var(--sub)}
+      .toplinks{display:flex;flex-wrap:wrap;gap:12px;color:var(--sub);font-size:14px}
+      .pill{background:var(--muted);border:1px solid #1b2027;padding:6px 10px;border-radius:999px}
+      .grid{display:grid;grid-template-columns:1fr;gap:18px}
+      @media(min-width:900px){.grid{grid-template-columns:1.2fr .8fr;gap:24px}}
+      .card{background:var(--card);border:1px solid #171b22;border-radius:16px;padding:18px 18px 8px}
+      h2{font-size:16px;letter-spacing:.6px;text-transform:uppercase;margin:0 0 10px 0;color:var(--sub)}
+      .section{display:flex;flex-direction:column;gap:14px}
+      .item{display:flex;gap:12px}
+      .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;margin-top:9px;flex-shrink:0}
+      .role{font-weight:700}
+      .org{color:var(--sub)}
+      .meta{color:var(--sub);font-size:13px}
+      ul{margin:6px 0 0 18px;padding:0}
+      li{margin-bottom:6px}
+      .skills{display:flex;flex-wrap:wrap;gap:8px}
+      .skill{background:var(--muted);border:1px solid #1b2027;padding:6px 8px;border-radius:8px;font-size:12px;color:var(--sub)}
+      .footer{margin-top:18px;color:var(--sub);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+      .btn{display:inline-block;background:#161b22;border:1px solid #222a35;padding:8px 12px;border-radius:10px}
+      .btn:hover{transform:translateY(-1px)}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
