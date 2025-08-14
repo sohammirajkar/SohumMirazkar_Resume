@@ -29,8 +29,12 @@ const links: Link[] = [
 const skills = [
   'Python', 'TypeScript', 'SQL', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy',
   'Tableau', 'Matplotlib', 'Power BI', 'PostgreSQL', 'MySQL', 'Docker', 'Git', 'LangChain',
-  'Hypothesis Testing', 'A/B Testing', 'Time Series', 'Classification', 'Regression', 'EDA'
+  'Hypothesis Testing', 'A/B Testing', 'Time Series', 'Classification', 'Regression', 'EDA',
+  'DCF Modeling', 'Portfolio Optimization', 'Options Pricing (Black-Scholes, Binomial)',
+  'Value at Risk (VaR)', 'Monte Carlo Simulation', 'Stochastic Processes',
+  'Correlation & Covariance Analysis', 'Sensitivity & Scenario Analysis', 'Financial Time Series Forecasting'
 ]
+
 
 const experiences: Experience[] = [
   {
