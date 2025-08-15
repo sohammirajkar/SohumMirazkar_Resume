@@ -242,6 +242,12 @@ export default function App() {
           <section className="card">
             <h2>Certifications</h2>
             <ul>
+              <li>
+                <a href="https://drive.google.com/file/d/1ziS9qW2DboExWAQBDK5XgvHFVXF0Tk2T/view?usp=sharing\"
+                  target="_blank" rel="noreferrer">
+                  Disease Modeling and Target Discovery — Insilico Medicine School, Dec 2024
+                </a>
+              </li>
               <li>Google Digital Marketing & Analytics (1–6)</li>
               <li>Wharton Entrepreneurship (1–3)</li>
               <li>U. Michigan Negotiation & Communication (1–3)</li>
