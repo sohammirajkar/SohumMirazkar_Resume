@@ -169,7 +169,7 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <div className="name">Soham Mirajkar</div>
+        <div className="name">Sohum Mirazkarr</div>
         <div className="title">Data Scientist / AI Engineer — focused on Risk, Analytics, and Markets</div>
         <div className="toplinks">
           {links.map(l => <a key={l.href} className="pill" href={l.href} target="_blank" rel="noreferrer">{l.label}</a>)}
