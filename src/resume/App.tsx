@@ -86,6 +86,16 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'FX_vol_risk - FX Traders can use to identify high-volatility periods and regime shifts in INR pairs.',
+    stack: 'Python · Streamlit · numpy · matplotlib · arch',
+    href: 'https://github.com/sohammirajkar/FX_vol_risk',
+    bullets: [
+      'Simulate future FX paths to test hedging strategies. Calculate risk exposure (VaR) for portfolios',
+      'This tool helps traders manage risk, volatility, and uncertainty in INR-focused FX markets.',
+      'Example View USD/INR volatility clustering over time. Run 100 Monte Carlo simulations for GBP/INR. Estimate 95% daily VaR for EUR/INR.'
+    ]
+  },
+  {
     name: 'Kuber AI — AI Agent for Enterprise Financial Analysis',
     stack: 'Python · LangChain · FAISS · FastAPI · Retrieval‑Augmented Generation',
     href: 'https://github.com/sohammirajkar/Kuber_AI',
