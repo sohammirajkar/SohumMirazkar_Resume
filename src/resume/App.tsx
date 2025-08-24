@@ -28,11 +28,12 @@ const links: Link[] = [
 
 const skills = [
   'Python', 'TypeScript', 'SQL', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy',
-  'Tableau', 'Matplotlib', 'Power BI', 'PostgreSQL', 'MySQL', 'Docker', 'Git', 'LangChain',
-  'Hypothesis Testing', 'A/B Testing', 'Time Series', 'Classification', 'Regression', 'EDA',
+  'Tableau', 'Matplotlib', 'Power BI', 'PostgreSQL', 'Docker', 'Git', 'LangChain',
+  'Hypothesis Testing', 'A/B Testing', 'Time Series', 'Regression', 'EDA',
   'DCF Modeling', 'Portfolio Optimization', 'Options Pricing (Black-Scholes, Binomial)',
   'Value at Risk (VaR)', 'Monte Carlo Simulation', 'Stochastic Processes',
-  'Correlation & Covariance Analysis', 'Sensitivity & Scenario Analysis', 'Financial Time Series Forecasting'
+  'Correlation & Covariance Analysis', 'Sensitivity & Scenario Analysis', 'Financial Time Series Forecasting',
+
 ]
 
 
@@ -85,6 +86,20 @@ const experiences: Experience[] = [
 
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
+  {
+    name: 'MedKind M&A Pipeline - A comprehensive data science pipeline for analyzing business performance, customer behavior, and financial valuation for M&A purposes.',
+    stack: 'Python · Streamlit · Churn Modeling · Monte Carlo · NLP',
+    href: 'https://github.com/sohammirajkar/MnA_medkind',
+    bullets: [
+      'This project provides end-to-end analysis of MedKinds business data, including:',
+      'Customer RFM Analysis - Recency, Frequency, and Monetary value analysis',
+      'Monte Carlo DCF Valuation - Enterprise value estimation using probabilistic modeling',
+      'Customer Segmentation - Clustering customers into meaningful segments',
+      'Churn Prediction - Machine learning model to predict customer churn',
+      'Sentiment Analysis - Customer feedback analysis from multiple sources',
+      'Interactive Dashboard - Streamlit-based visualization platform'
+    ]
+  },
   {
     name: 'FX_vol_risk - FX Traders can use to identify high-volatility periods and regime shifts in INR pairs.',
     stack: 'Python · Streamlit · numpy · matplotlib · arch',
