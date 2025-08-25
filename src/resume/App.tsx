@@ -27,7 +27,7 @@ const links: Link[] = [
 ]
 
 const skills = [
-  'Python', 'TypeScript', 'SQL', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy',
+  'Python', 'TypeScript', 'SQL', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Terraform', 'NumPy',
   'Tableau', 'Matplotlib', 'Power BI', 'PostgreSQL', 'Docker', 'Git', 'LangChain',
   'Hypothesis Testing', 'A/B Testing', 'Time Series', 'Regression', 'EDA',
   'DCF Modeling', 'Portfolio Optimization', 'Options Pricing (Black-Scholes, Binomial)',
@@ -45,7 +45,7 @@ const experiences: Experience[] = [
     start: 'Jul 2024',
     end: 'Present',
     bullets: [
-      'Applied computational statistics to analyze molecular datasets; co-authored a peer‑reviewed study on Moringa Oleifera Lam.',
+      'Applied computational statistics to analyze molecular datasets; co-authored a peer-reviewed study on Moringa Oleifera Lam',
       'Built reproducible data pipelines and documentation improving experiment traceability and audit readiness.'
     ]
   },
@@ -194,7 +194,7 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <div className="name">Soham Mirajkar</div>
+        <div className="name">Sohum Mirazkar</div>
         <div className="title">I 🤍 Maths</div>
         <div className="toplinks">
           {links.map(l => <a key={l.href} className="pill" href={l.href} target="_blank" rel="noreferrer">{l.label}</a>)}
@@ -206,9 +206,7 @@ export default function App() {
           <section className="card">
             <h2>Professional Summary</h2>
             <p>
-              Data and ML specialist with experience building analytics and risk systems, from anomaly detection in payments to
-              demand and pricing models. Comfortable across Python/TS stacks, statistics, experiment design, and stakeholder‑ready
-              dashboards. Seeking roles in investment banking or fintech where quant‑minded product and data impact real P&L.
+              Data & Analytics specialist with experience in risk modeling, pricing, and financial data systems. Skilled in Python, statistics, and building dashboards to support investment decisions. Seeking analyst role in investment banking/fintech to apply quantitative rigor to valuation, risk, and P&L impact
             </p>
           </section>
 
