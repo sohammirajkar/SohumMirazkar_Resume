@@ -87,6 +87,19 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'Advanced Valuation Engine - A comprehensive financial valuation platform with advanced pricing models, real-time computations, and interactive visualizations.',
+    stack: 'Python · Streamlit · FastAPI · Celery · Redis · NumPy · Plotly · Terraform',
+    href: 'https://github.com/sohammirajkar/Advanced_Valuation_Engine',
+    bullets: [
+      'Black-Scholes & Binomial Tree Models with full Greeks calculation for European and American options',
+      'Exotic Options pricing (Asian, Barrier, Lookback) using Monte Carlo simulation with 10x performance optimization',
+      'Bond Analytics with pricing, yield calculation, duration, and sensitivity analysis',
+      'Async task processing with Celery and Redis caching for expensive computations',
+      'Interactive 3D volatility surfaces and real-time portfolio analytics with risk metrics',
+      'Production-ready architecture with FastAPI backend, Docker deployment, and comprehensive API documentation'
+    ]
+  },
+  {
     name: 'MedKind M&A Pipeline - A comprehensive data science pipeline for analyzing business performance, customer behavior, and financial valuation for M&A purposes.',
     stack: 'Python · Streamlit · Churn Modeling · Monte Carlo · NLP',
     href: 'https://github.com/sohammirajkar/MnA_medkind',
