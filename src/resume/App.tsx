@@ -237,7 +237,7 @@ export default function App() {
           <section className="card">
             <h2>Education</h2>
             <ul>
-              <li><strong>B.Tech Data Science & Applied A.I</strong> — IIT Jodhpur (pursuing)</li>
+              <li><strong>B.Tech (Data Science)</strong> — IIT Jodhpur (pursuing)</li>
               <li><strong>A.S. Mathematics</strong> — Foothill‑De Anza College, CA</li>
               <li><strong>Relevant Coursework:</strong> Stochastic Calculus, Econometrics, Financial Engineering, Derivative Securities, Portfolio Theory, Risk Management, Time Series Analysis, Mathematical Finance</li>
               <li><strong>Additional:</strong> Biostatistics, Pharmacokinetics, Clinical Research Methods (MCPHS)</li>
@@ -246,15 +246,15 @@ export default function App() {
           <section className="card">
             <h2>Certifications & Training</h2>
             <ul>
-              <li><strong>CQF (Certificate in Quantitative Finance)</strong> — In Progress</li>
-              <li><strong>FRM (Financial Risk Manager)</strong> — Level I Candidate</li>
+
+
               <li>
                 <a href="https://drive.google.com/file/d/1ziS9qW2DboExWAQBDK5XgvHFVXF0Tk2T/view?usp=sharing"
                   target="_blank" rel="noreferrer">
                   Advanced Quantitative Modeling — Insilico Medicine School, Dec 2024
                 </a>
               </li>
-              <li><strong>Bloomberg Market Concepts (BMC)</strong> — Completed</li>
+
               <li><strong>Wharton Finance Specialization</strong> — Corporate Finance, Valuation</li>
               <li><strong>Options Trading & Risk Management</strong> — Self-Study</li>
             </ul>
