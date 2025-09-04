@@ -28,9 +28,9 @@ const links: Link[] = [
 
 const skills = [
   'Python', 'R', 'C++', 'SQL', 'MATLAB', 'Bloomberg Terminal', 'Refinitiv Eikon', 'Capital IQ',
-  'PyTorch', 'TensorFlow', 'Scikit-learn', 'NumPy', 'Pandas', 'SciPy', 'QuantLib',
+  'PyTorch', 'TensorFlow', 'Scikit-learn', 'NumPy', 'Pandas', 'SciPy', 'QuantLib', 'Streamlit',
   'Fixed Income Analytics', 'Equity Derivatives', 'Credit Risk Models', 'Market Risk (VaR, CVaR)',
-  'GARCH Models', 'Copula Theory', 'Jump-Diffusion Models', 'Regime-Switching Models',
+  'GARCH Models', 'LSTM Networks', 'ARIMA', 'Copula Theory', 'Jump-Diffusion Models', 'Regime-Switching Models',
   'Monte Carlo Simulation', 'Quasi-Monte Carlo', 'MCMC Methods', 'Bootstrap Sampling',
   'Black-Scholes-Merton', 'Heston Model', 'Hull-White Model', 'Vasicek Model',
   'Factor Models (Fama-French)', 'CAPM', 'APT', 'Risk Parity', 'Mean Reversion',
@@ -38,7 +38,8 @@ const skills = [
   'Volatility Surface Construction', 'Greeks Calculation', 'Exotic Options Pricing',
   'Credit Default Swaps', 'Interest Rate Swaps', 'FX Derivatives',
   'Backtesting', 'Walk-Forward Analysis', 'Sharpe Optimization', 'Maximum Drawdown',
-  'Stress Testing', 'Scenario Analysis', 'PnL Attribution', 'Performance Attribution'
+  'Stress Testing', 'Scenario Analysis', 'PnL Attribution', 'Performance Attribution',
+  'Multi-Broker Data Integration', 'Real-time Market Data', 'API Management', 'Financial Data Vendors'
 ]
 
 
@@ -96,6 +97,18 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'Hybrid Volatility Forecasting Dashboard - Advanced econometric and ML platform for commodity volatility prediction',
+    stack: 'Python · GARCH Models · LSTM · Streamlit · Multi-Broker APIs · PyTorch',
+    href: 'https://github.com/sohammirajkar/Hybrid_vol_dashboard',
+    bullets: [
+      'Built hybrid forecasting system combining GARCH(1,1) econometric models with LSTM neural networks for crude oil volatility prediction',
+      'Integrated 6+ financial data providers (Yahoo Finance, Alpha Vantage, Finnhub, Tiingo) with automatic failover mechanisms',
+      'Developed real-time trading signals generation with volatility clustering analysis and risk-adjusted performance metrics',
+      'Implemented robust data pipeline with synthetic data generation for testing and model validation in market downtime',
+      'Created interactive Streamlit dashboard with configurable forecasting horizons and comprehensive error handling'
+    ]
+  },
+  {
     name: 'Advanced Derivatives Pricing Engine - Production-ready quantitative finance platform with sophisticated pricing models and real-time risk analytics',
     stack: 'Python · QuantLib · NumPy · FastAPI · Redis · Docker · Streamlit',
     href: 'https://github.com/sohammirajkar/Advanced_Valuation_Engine',
@@ -148,16 +161,6 @@ const projects: Project[] = [
       'Automated deal flow analysis across multiple data providers with sector/geography/AUM filtering',
       'Built financial metrics screening (Revenue growth, EBITDA margins, Debt/Equity ratios) for investment criteria',
       'Implemented real-time market data integration and competitive analysis for deal sourcing efficiency'
-    ]
-  },
-  {
-    name: 'Interactive Options Pricing & Greeks Calculator - Real-time derivatives analytics with advanced visualization',
-    stack: 'JavaScript · D3.js · Black-Scholes · Extended Kalman Filter',
-    href: 'https://github.com/sohammirajkar/BlackScholes_EKF_Demo',
-    bullets: [
-      'Built interactive Black-Scholes pricing model with real-time Greeks calculation and sensitivity analysis',
-      'Implemented Extended Kalman Filter for dynamic volatility estimation and model calibration',
-      'Created 3D volatility surface visualization with time-to-expiration and strike price dependencies'
     ]
   }
 ]
