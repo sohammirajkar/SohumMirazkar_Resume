@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 type Link = { label: string; href: string }
 type Bullet = string
@@ -19,6 +19,14 @@ type Project = {
   href?: string
 }
 
+type BlogPost = {
+  title: string
+  date: string
+  category: string
+  content: string
+  references: { text: string; url?: string }[]
+}
+
 const links: Link[] = [
   { label: 'GitHub', href: 'https://github.com/sohammirajkar' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/soham-mirajkar-8443a0270' },
@@ -27,7 +35,7 @@ const links: Link[] = [
 ]
 
 const skills = [
-  'Python', 'R', 'C++', 'SQL', 'MATLAB', 'Bloomberg Terminal', 'Refinitiv Eikon', 'Capital IQ',
+  'Python', 'R', 'C++', 'SQL', 'MATLAB', 'Bloomberg Terminal', 'Capital IQ',
   'PyTorch', 'TensorFlow', 'Scikit-learn', 'NumPy', 'Pandas', 'SciPy', 'QuantLib', 'Streamlit',
   'Fixed Income Analytics', 'Equity Derivatives', 'Credit Risk Models', 'Market Risk (VaR, CVaR)',
   'GARCH Models', 'LSTM Networks', 'ARIMA', 'Copula Theory', 'Jump-Diffusion Models', 'Regime-Switching Models',
@@ -175,6 +183,31 @@ const projects: Project[] = [
   }
 ]
 
+const blogPosts: BlogPost[] = [
+  {
+    title: 'Geometric Brownian Motion: Foundation and Limitations in Modern Finance',
+    date: 'January 2025',
+    category: 'Quantitative Finance',
+    content: `Geometric Brownian motion (GBM) is the classical model for asset prices in continuous time, underlying the Black–Scholes–Merton option‐pricing framework. In this model the logarithm of the asset price follows a Brownian motion with constant drift and volatility, so that prices are lognormally distributed.
+
+In fact, Black and Scholes showed that under risk-neutral GBM the option price admits a closed‐form solution. However, empirical studies find that real returns deviate markedly from the GBM assumptions. For example, option‐implied state‐price densities exhibit pronounced negative skewness and excess kurtosis (fat tails) which the simple lognormal model cannot capture.
+
+Stojkovski et al. note that GBM "fails to adequately reproduce" the fat‐tailed return distributions observed in practice. To address these discrepancies, a variety of enhanced models have been developed – for instance stochastic‐volatility models (e.g. Heston 1993) and jump‐diffusion models – that relax GBM's constant‐volatility and continuous‐paths assumptions.
+
+Despite its limitations, GBM remains a computationally convenient baseline. Monte Carlo simulation of GBM is straightforward (given its independent normal increments) and closed‐form formulas exist for vanilla options. Modern computational finance, however, often augments GBM to better match data.
+
+For example, introducing long‐memory or state‐dependent volatility can greatly improve fit to market data. Alhagyan and Yassen (2023) find that a "fractional" GBM with stochastic volatility produces much more accurate S&P 500 forecasts (lower MSE/MAPE) than classical GBM.
+
+In summary, GBM provides a simple, analytically tractable foundation for modeling and simulation in finance, but practitioners increasingly use generalized versions (fractional or with jumps and stochastic variance) to capture the heavy‐tail, skewness and volatility features seen in real markets.`,
+    references: [
+      { text: 'Black F, Scholes M. The pricing of options and corporate liabilities. J Polit Econ. 1973;81(3):637–654.', url: 'https://doi.org/10.1086/260062' },
+      { text: 'Aït-Sahalia Y, Lo AW. Nonparametric estimation of state-price densities implicit in financial asset prices. J Finance. 1998;53(2):499–547.', url: 'https://doi.org/10.1111/0022-1082.215228' },
+      { text: 'Stojkoski V, Sandev T, Basnarkov L, Kocarev L, Metzler R. Generalised geometric Brownian motion: theory and applications to option pricing. Entropy. 2020;22(12):1432.', url: 'https://www.mdpi.com/1099-4300/22/12/1432' },
+      { text: 'Alhagyan M, Yassen MF. Incorporating stochastic volatility and long memory into geometric Brownian motion model to forecast performance of Standard and Poor\'s 500 index. AIMS Math. 2023;8(8):18581–18595.', url: 'https://www.aimspress.com/article/doi/10.3934/math.2023945?viewType=HTML' }
+    ]
+  }
+]
+
 const publications = [
   {
     title: 'Quantitative Analysis of Moringa Oleifera: Statistical Modeling in Pharmaceutical Research',
@@ -234,6 +267,40 @@ export default function App() {
                   <ul>
                     {p.bullets.map((b, i) => <li key={i}>{b}</li>)}
                   </ul>
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="card">
+            <h2>Blog</h2>
+            {blogPosts.map((post, idx) => (
+              <div className="blog-post" key={idx}>
+                <div className="blog-header">
+                  <h3 className="blog-title">{post.title}</h3>
+                  <div className="blog-meta">
+                    <span className="blog-date">{post.date}</span>
+                    <span className="blog-category">{post.category}</span>
+                  </div>
+                </div>
+                <div className="blog-content">
+                  {post.content.split('\n\n').map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
+                <div className="blog-references">
+                  <h4>References</h4>
+                  <ol>
+                    {post.references.map((ref, i) => (
+                      <li key={i}>
+                        {ref.url ? (
+                          <a href={ref.url} target="_blank" rel="noreferrer">{ref.text}</a>
+                        ) : (
+                          ref.text
+                        )}
+                      </li>
+                    ))}
+                  </ol>
                 </div>
               </div>
             ))}
