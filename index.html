@@ -23,6 +23,10 @@
       box-sizing: border-box
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     html,
     body,
     #root {
@@ -84,7 +88,15 @@
       background: var(--muted);
       border: 1px solid #1b2027;
       padding: 6px 10px;
-      border-radius: 999px
+      border-radius: 999px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .pill:hover {
+      background: #1a1f26;
+      border-color: #2a3038;
+      transform: translateY(-1px);
     }
 
     .grid {

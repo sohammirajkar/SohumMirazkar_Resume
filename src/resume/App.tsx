@@ -30,6 +30,7 @@ type BlogPost = {
 const links: Link[] = [
   { label: 'GitHub', href: 'https://github.com/sohammirajkar' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/soham-mirajkar-8443a0270' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Email', href: 'mailto:sohammirajkar222@gmail.com' },
   { label: 'Download PDF', href: './Soham_Mirajkar_IB_Resume.pdf' }
 ]
@@ -224,7 +225,21 @@ export default function App() {
         <div className="name">Sohum Mirazkar</div>
         <div className="title">Quantitative Finance • Data Science • Risk Analytics</div>
         <div className="toplinks">
-          {links.map(l => <a key={l.href} className="pill" href={l.href} target="_blank" rel="noreferrer">{l.label}</a>)}
+          {links.map(l => (
+            <a
+              key={l.href}
+              className="pill"
+              href={l.href}
+              target={l.href.startsWith('http') ? '_blank' : undefined}
+              rel={l.href.startsWith('http') ? 'noreferrer' : undefined}
+              onClick={l.href === '#blog' ? (e) => {
+                e.preventDefault();
+                document.getElementById('blog-section')?.scrollIntoView({ behavior: 'smooth' });
+              } : undefined}
+            >
+              {l.label}
+            </a>
+          ))}
         </div>
       </header>
 
@@ -272,7 +287,7 @@ export default function App() {
             ))}
           </section>
 
-          <section className="card">
+          <section className="card" id="blog-section">
             <h2>Blog</h2>
             {blogPosts.map((post, idx) => (
               <div className="blog-post" key={idx}>
