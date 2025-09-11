@@ -97,6 +97,16 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'UARPO Implementation - Uncertainty-Aware Reinforcement Policy Optimization for Financial Decision Making',
+    stack: 'Python · Reinforcement Learning · PyTorch · FinZero · Machine Learning · Financial Modeling',
+    href: 'https://github.com/sohammirajkar/UARPO_Implementation',
+    bullets: [
+      'Developed UARPO-LoRA: Implemented Uncertainty-Aware Reinforcement Policy Optimization with Low-Rank Adaptation for efficient fine-tuning of BLIP2 vision-language models on financial prediction tasks, reducing trainable parameters by 99% while maintaining performance.',
+      'Built end-to-end pipeline combining computer vision and NLP for automated financial chart analysis and market prediction.',
+      'Engineered ML training infrastructure optimized for M1/M2 MacBooks with native MPS support and cross-platform compatibility.'
+    ]
+  },
+  {
     name: 'Hybrid Volatility Forecasting Dashboard - Advanced econometric and ML platform for commodity volatility prediction',
     stack: 'Python · GARCH Models · LSTM · Streamlit · Multi-Broker APIs · PyTorch',
     href: 'https://github.com/sohammirajkar/Hybrid_vol_dashboard',
