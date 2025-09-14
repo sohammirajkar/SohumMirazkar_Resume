@@ -202,11 +202,11 @@ const blogPosts: BlogPost[] = [
     category: 'Computational Biology',
     content: `The intersection of artificial intelligence and biotechnology has reached a pivotal moment with the development of ProteinRL-DB, an open-source platform that democratizes protein design through reinforcement learning. After comprehensive testing and validation, this groundbreaking toolkit is now ready to accelerate research in computational biology, drug discovery, and synthetic biology.
 
-## The Challenge: From Sequence to Structure to Function
+The Challenge: From Sequence to Structure to Function
 
 Protein design has traditionally been a time-intensive process requiring deep domain expertise and expensive computational resources. Researchers faced significant barriers: limited datasets for machine learning, complex integration of structure prediction tools, and lack of standardized frameworks for reinforcement learning applications in protein engineering. ProteinRL-DB addresses these challenges head-on by providing a complete end-to-end scaffold that seamlessly integrates AlphaFold/ColabFold predictions with reinforcement learning workflows.
 
-## Key Findings and Capabilities
+Key Findings and Capabilities
 
 Our extensive testing generated over 35 RL episodes containing 300+ individual protein optimization steps, demonstrating the platform's robust performance across diverse protein families. The system achieved an impressive 51.3% high-quality prediction rate (≥70 pLDDT score) while maintaining 43.3% improvement trajectories, indicating effective learning and optimization capabilities.
 
