@@ -212,23 +212,23 @@ Our extensive testing generated over 35 RL episodes containing 300+ individual p
 
 The platform successfully processes various protein types - from green fluorescent protein variants to enzyme active sites, membrane proteins, and antibody fragments. This diversity proves ProteinRL-DB's versatility for real-world applications spanning drug discovery, enzyme engineering, and synthetic biology research.
 
-## Impact for Researchers and Data Scientists
+Impact for Researchers and Data Scientists
 
-**For Computational Biologists**: ProteinRL-DB eliminates the technical overhead of setting up protein design pipelines. Researchers can now focus on biological questions rather than infrastructure, with ready-to-use datasets containing 270+ unique protein sequences for immediate analysis.
+For Computational Biologists: ProteinRL-DB eliminates the technical overhead of setting up protein design pipelines. Researchers can now focus on biological questions rather than infrastructure, with ready-to-use datasets containing 270+ unique protein sequences for immediate analysis.
 
-**For Machine Learning Engineers**: The platform provides clean, structured datasets in both JSONL and CSV formats, perfect for training neural networks, developing new algorithms, or benchmarking existing models. The integrated one-hot encoding utilities and trajectory data support both supervised and reinforcement learning approaches.
+For Machine Learning Engineers: The platform provides clean, structured datasets in both JSONL and CSV formats, perfect for training neural networks, developing new algorithms, or benchmarking existing models. The integrated one-hot encoding utilities and trajectory data support both supervised and reinforcement learning approaches.
 
-**For Drug Discovery Teams**: The ability to rapidly generate and evaluate protein variants accelerates lead optimization processes. Teams can explore sequence space systematically, identifying promising candidates for experimental validation while reducing wet-lab costs.
+For Drug Discovery Teams: The ability to rapidly generate and evaluate protein variants accelerates lead optimization processes. Teams can explore sequence space systematically, identifying promising candidates for experimental validation while reducing wet-lab costs.
 
-**For Educational Institutions**: ProteinRL-DB serves as an excellent teaching tool, demonstrating practical applications of AI in biology. Students gain hands-on experience with real protein datasets while learning fundamental concepts in both machine learning and structural biology.
+For Educational Institutions: ProteinRL-DB serves as an excellent teaching tool, demonstrating practical applications of AI in biology. Students gain hands-on experience with real protein datasets while learning fundamental concepts in both machine learning and structural biology.
 
-## Democratizing Access to Protein Design
+Democratizing Access to Protein Design
 
 Perhaps most importantly, ProteinRL-DB democratizes access to cutting-edge protein design capabilities. The platform requires minimal computational resources while providing the same quality of analysis previously available only to well-funded research institutions. This accessibility could accelerate breakthroughs across the global research community.
 
 The comprehensive validation results prove that ProteinRL-DB is not just a prototype but a production-ready tool. With its robust CLI interface, Jupyter notebook demonstrations, and extensive documentation, researchers can begin productive work immediately.
 
-## Looking Forward
+Looking Forward
 
 As the scientific community grapples with complex challenges from pandemic preparedness to sustainable manufacturing, tools like ProteinRL-DB represent a new paradigm in biological research. By combining the predictive power of modern AI with the precision of computational biology, we're entering an era where designed proteins could address humanity's most pressing needs.
 
