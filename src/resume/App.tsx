@@ -106,6 +106,17 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'ProteinRL-DB - Open-Source Reinforcement Learning Platform for Protein Design',
+    stack: 'Python · Reinforcement Learning · PyTorch · AlphaFold · ColabFold · Computational Biology · Bioinformatics',
+    href: 'https://github.com/sohammirajkar/ProteinRL-DB',
+    bullets: [
+      'Built end-to-end protein design platform integrating AlphaFold/ColabFold structure prediction with reinforcement learning workflows for democratized access to computational protein engineering.',
+      'Generated comprehensive dataset of 270+ unique protein sequences across 35+ RL episodes, achieving 51.3% high-quality predictions (≥70 pLDDT score) with 43.3% improvement trajectories.',
+      'Developed production-ready CLI interface and Jupyter notebook demonstrations for immediate research deployment, supporting drug discovery, enzyme engineering, and synthetic biology applications.',
+      'Implemented robust data pipeline with JSONL/CSV export formats, one-hot encoding utilities, and trajectory analysis for both supervised and reinforcement learning approaches.'
+    ]
+  },
+  {
     name: 'UARPO Implementation - Uncertainty-Aware Reinforcement Policy Optimization for Financial Decision Making',
     stack: 'Python · Reinforcement Learning · PyTorch · FinZero · Machine Learning · Financial Modeling',
     href: 'https://github.com/sohammirajkar/UARPO_Implementation',
@@ -186,8 +197,53 @@ const projects: Project[] = [
 
 const blogPosts: BlogPost[] = [
   {
+    title: 'How ProteinRL-DB Bridges AI and Biotechnology',
+    date: 'September 2025',
+    category: 'Computational Biology',
+    content: `The intersection of artificial intelligence and biotechnology has reached a pivotal moment with the development of ProteinRL-DB, an open-source platform that democratizes protein design through reinforcement learning. After comprehensive testing and validation, this groundbreaking toolkit is now ready to accelerate research in computational biology, drug discovery, and synthetic biology.
+
+## The Challenge: From Sequence to Structure to Function
+
+Protein design has traditionally been a time-intensive process requiring deep domain expertise and expensive computational resources. Researchers faced significant barriers: limited datasets for machine learning, complex integration of structure prediction tools, and lack of standardized frameworks for reinforcement learning applications in protein engineering. ProteinRL-DB addresses these challenges head-on by providing a complete end-to-end scaffold that seamlessly integrates AlphaFold/ColabFold predictions with reinforcement learning workflows.
+
+## Key Findings and Capabilities
+
+Our extensive testing generated over 35 RL episodes containing 300+ individual protein optimization steps, demonstrating the platform's robust performance across diverse protein families. The system achieved an impressive 51.3% high-quality prediction rate (≥70 pLDDT score) while maintaining 43.3% improvement trajectories, indicating effective learning and optimization capabilities.
+
+The platform successfully processes various protein types - from green fluorescent protein variants to enzyme active sites, membrane proteins, and antibody fragments. This diversity proves ProteinRL-DB's versatility for real-world applications spanning drug discovery, enzyme engineering, and synthetic biology research.
+
+## Impact for Researchers and Data Scientists
+
+**For Computational Biologists**: ProteinRL-DB eliminates the technical overhead of setting up protein design pipelines. Researchers can now focus on biological questions rather than infrastructure, with ready-to-use datasets containing 270+ unique protein sequences for immediate analysis.
+
+**For Machine Learning Engineers**: The platform provides clean, structured datasets in both JSONL and CSV formats, perfect for training neural networks, developing new algorithms, or benchmarking existing models. The integrated one-hot encoding utilities and trajectory data support both supervised and reinforcement learning approaches.
+
+**For Drug Discovery Teams**: The ability to rapidly generate and evaluate protein variants accelerates lead optimization processes. Teams can explore sequence space systematically, identifying promising candidates for experimental validation while reducing wet-lab costs.
+
+**For Educational Institutions**: ProteinRL-DB serves as an excellent teaching tool, demonstrating practical applications of AI in biology. Students gain hands-on experience with real protein datasets while learning fundamental concepts in both machine learning and structural biology.
+
+## Democratizing Access to Protein Design
+
+Perhaps most importantly, ProteinRL-DB democratizes access to cutting-edge protein design capabilities. The platform requires minimal computational resources while providing the same quality of analysis previously available only to well-funded research institutions. This accessibility could accelerate breakthroughs across the global research community.
+
+The comprehensive validation results prove that ProteinRL-DB is not just a prototype but a production-ready tool. With its robust CLI interface, Jupyter notebook demonstrations, and extensive documentation, researchers can begin productive work immediately.
+
+## Looking Forward
+
+As the scientific community grapples with complex challenges from pandemic preparedness to sustainable manufacturing, tools like ProteinRL-DB represent a new paradigm in biological research. By combining the predictive power of modern AI with the precision of computational biology, we're entering an era where designed proteins could address humanity's most pressing needs.
+
+The future of protein design is here, and it's open source, accessible, and ready to transform research across disciplines.`,
+    references: [
+      { text: 'Jumper, J., Evans, R., Pritzel, A., et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021).', url: 'https://doi.org/10.1038/s41586-021-03819-2' },
+      { text: 'Mirdita, M., Schütze, K., Moriwaki, Y., et al. ColabFold: making protein folding accessible to all. Nat Methods 19, 679–682 (2022).', url: 'https://doi.org/10.1038/s41592-022-01488-1' },
+      { text: 'Anand, N., Achim, T. Protein structure and sequence generation with equivariant denoising diffusion probabilistic models. arXiv preprint arXiv:2205.15019 (2022).', url: 'https://arxiv.org/abs/2205.15019' },
+      { text: 'Dauparas, J., Anishchenko, I., Bennett, N., et al. Robust deep learning–based protein sequence design using ProteinMPNN. Science 378, 49-56 (2022).', url: 'https://doi.org/10.1126/science.add2187' },
+      { text: 'ProteinRL-DB: Open-Source Reinforcement Learning Platform for Protein Design. GitHub Repository.', url: 'https://github.com/sohammirajkar/ProteinRL-DB' }
+    ]
+  },
+  {
     title: 'Geometric Brownian Motion: Foundation and Limitations in Modern Finance',
-    date: 'January 2025',
+    date: 'August 2025',
     category: 'Quantitative Finance',
     content: `Geometric Brownian motion (GBM) is the classical model for asset prices in continuous time, underlying the Black–Scholes–Merton option‐pricing framework. In this model the logarithm of the asset price follows a Brownian motion with constant drift and volatility, so that prices are lognormally distributed.
 
