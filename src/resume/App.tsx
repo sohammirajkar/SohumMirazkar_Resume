@@ -246,9 +246,7 @@ Performance Optimization: My system processes 90 days of data across three sprea
 
 Strategic Implications: Crack spreads offer unique diversification advantages including low correlation with equities, inflation hedge properties, dollar-neutral characteristics, and volatility harvesting opportunities. The system also includes oil-gold spread analysis, revealing negative correlation patterns useful for crisis alpha generation.
 
-Conclusion: The Quantitative Edge in Energy Markets
-
-Crack spread trading represents a compelling intersection of fundamental economics and quantitative finance. My analysis demonstrates that with proper statistical framework and risk management, these strategies offer attractive risk-adjusted returns while providing valuable portfolio diversification. Key takeaways include confirmed mean reversion properties, effective technical analysis applications, critical importance of risk management, data quality requirements, and persistent seasonal patterns for enhanced strategy performance.`,
+Conclusion: The Quantitative Edge in Energy MarketsCrack spread trading represents a compelling intersection of fundamental economics and quantitative finance. My analysis demonstrates that with proper statistical framework and risk management, these strategies offer attractive risk-adjusted returns while providing valuable portfolio diversification. Key takeaways include confirmed mean reversion properties, effective technical analysis applications, critical importance of risk management, data quality requirements, and persistent seasonal patterns for enhanced strategy performance.`,
     references: [
       { text: 'Hull, J. C. Options, Futures, and Other Derivatives. 10th Edition. Pearson, 2018.', url: 'https://www.pearson.com/store/p/options-futures-and-other-derivatives/9780134631479' },
       { text: 'Geman, H. Commodities and Commodity Derivatives: Modeling and Pricing for Agriculturals, Metals, and Energy. John Wiley & Sons, 2005.' },
@@ -407,32 +405,63 @@ export default function App() {
           <section className="card" id="blog-section">
             <h2>Blog</h2>
             {blogPosts.map((post, idx) => (
-              <div className="blog-post" key={idx}>
-                <div className="blog-header">
-                  <h3 className="blog-title">{post.title}</h3>
-                  <div className="blog-meta">
-                    <span className="blog-date">{post.date}</span>
-                    <span className="blog-category">{post.category}</span>
+              <div className="item" key={idx}>
+                <div className="dot" />
+                <div>
+                  <div className="role">
+                    <a
+                      href={`#blog-${idx}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const newWindow = window.open('', '_blank');
+                        if (newWindow) {
+                          newWindow.document.write(`
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                              <title>${post.title}</title>
+                              <meta charset="utf-8">
+                              <style>
+                                body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+                                h1 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+                                .meta { color: #666; margin-bottom: 20px; }
+                                .category { background: #f0f0f0; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; }
+                                p { margin-bottom: 16px; }
+                                h4 { margin-top: 30px; color: #333; }
+                                ol { padding-left: 20px; }
+                                li { margin-bottom: 8px; }
+                                a { color: #0066cc; text-decoration: none; }
+                                a:hover { text-decoration: underline; }
+                              </style>
+                            </head>
+                            <body>
+                              <h1>${post.title}</h1>
+                              <div class="meta">
+                                <span>${post.date}</span> • <span class="category">${post.category}</span>
+                              </div>
+                              ${post.content.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
+                              <h4>References</h4>
+                              <ol>
+                                ${post.references.map(ref => `
+                                  <li>
+                                    ${ref.url ? `<a href="${ref.url}" target="_blank" rel="noreferrer">${ref.text}</a>` : ref.text}
+                                  </li>
+                                `).join('')}
+                              </ol>
+                            </body>
+                            </html>
+                          `);
+                          newWindow.document.close();
+                        }
+                      }}
+                    >
+                      {post.title}
+                    </a>
                   </div>
-                </div>
-                <div className="blog-content">
-                  {post.content.split('\n\n').map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))}
-                </div>
-                <div className="blog-references">
-                  <h4>References</h4>
-                  <ol>
-                    {post.references.map((ref, i) => (
-                      <li key={i}>
-                        {ref.url ? (
-                          <a href={ref.url} target="_blank" rel="noreferrer">{ref.text}</a>
-                        ) : (
-                          ref.text
-                        )}
-                      </li>
-                    ))}
-                  </ol>
+                  <div className="meta">{post.date} • {post.category}</div>
+                  <p className="org">{post.content.substring(0, 200)}...</p>
                 </div>
               </div>
             ))}
