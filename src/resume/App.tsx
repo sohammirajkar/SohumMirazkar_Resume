@@ -54,51 +54,51 @@ const skills = [
 
 const experiences: Experience[] = [
   {
-    role: 'Quantitative Research Associate',
+    role: 'Research Associate',
     org: 'MedKind Pharma',
-    location: 'Thane, India',
-    start: 'Jul 2024',
-    end: 'Present',
+    location: 'Mumbai, Maharashtra, India',
+    start: 'Aug 2024',
+    end: 'Apr 2025',
     bullets: [
-      'Applied advanced statistical modeling and Monte Carlo simulation to analyze complex datasets; co-authored peer-reviewed research with quantitative rigor',
-      'Developed automated data pipelines with statistical validation, improving model accuracy by 25% and reducing computation time by 40%',
-      'Implemented risk management frameworks and stress testing protocols for pharmaceutical investment analysis'
+      'Developed an interactive dashboard tracking proposed private M&A deals with comprehensive financial analysis and valuation models',
+      'Published peer-reviewed research in ABR International Journal on quantitative analysis of pharmaceutical compounds using advanced statistical methods',
+      'Applied statistical modeling and data analysis techniques to pharmaceutical research, contributing to evidence-based drug development processes'
     ]
   },
   {
-    role: 'Quantitative Analyst (Pro Bono)',
+    role: 'Business Intelligence Intern',
     org: 'Hertz Car Sales',
-    location: 'Pleasanton, CA',
-    start: 'Jan 2023',
+    location: 'Pleasanton, California, United States',
+    start: 'May 2023',
     end: 'Dec 2023',
     bullets: [
-      'Built predictive pricing models using time-series analysis and volatility forecasting, identifying revenue optimization opportunities worth $2M+',
-      'Developed real-time risk dashboards with automated alerts for demand volatility and inventory exposure',
-      'Implemented cohort analysis and customer lifetime value models to optimize pricing strategies and reduce churn by 18%'
+      'Performed customer needs analysis and market research to identify sales opportunities, driving data-driven business strategy',
+      'Developed recommendation systems based on customer behavior patterns using machine learning algorithms and predictive analytics',
+      'Created comprehensive data visualizations and reports to support executive decision-making processes and improve operational efficiency'
     ]
   },
   {
-    role: 'Quantitative Marketing Analyst (Contract)',
-    org: 'Google / Bleep‑Press',
-    location: 'Cupertino, CA',
+    role: 'Sales Analyst (Closer)',
+    org: 'Bleep-Press (Google Startup)',
+    location: 'Remote',
     start: 'Sep 2022',
     end: 'Dec 2022',
     bullets: [
-      'Applied statistical hypothesis testing and multivariate analysis to optimize conversion funnels, achieving 15% improvement in ROI',
-      'Built automated reporting systems with real-time risk metrics and performance attribution analysis',
-      'Implemented A/B testing frameworks with statistical significance testing and power analysis'
+      'Analyzed customer relationship data to optimize sales strategies and improve conversion rates by 15% through advanced CRM analytics',
+      'Developed predictive models for customer segmentation and lead scoring, enhancing sales team efficiency and target identification',
+      'Implemented data-driven advertising strategies and performed A/B testing for campaign optimization, creating automated reporting dashboards for KPI tracking'
     ]
   },
   {
-    role: 'Financial Operations Analyst',
+    role: 'Analyst',
     org: 'Chevron',
-    location: 'Sunnyvale, CA',
-    start: 'Jan 2021',
-    end: 'Jan 2022',
+    location: 'Remote',
+    start: 'Jan 2022',
+    end: 'Jun 2022',
     bullets: [
-      'Developed stochastic demand forecasting models using ARIMA and GARCH, reducing inventory carrying costs by $3.2M annually',
-      'Implemented risk management protocols with VaR calculations and stress testing for commodity price exposure',
-      'Built automated monitoring systems for operational risk metrics and early warning indicators'
+      'Managed inventory forecasting and demand planning using statistical models, optimizing supply chain operations and reducing costs',
+      'Conducted performance analysis and developed metrics to optimize operational efficiency, implementing data collection systems for inventory tracking',
+      'Mentored team members on data analysis techniques and quality assurance protocols, fostering knowledge transfer and team development'
     ]
   }
 ]
@@ -338,7 +338,7 @@ export default function App() {
     <div className="container">
       <header className="header">
         <div className="name">Sohum Mirazkar</div>
-        <div className="title">Quantitative Finance • Data Science • Risk Analytics</div>
+        <div className="title">Data Science • Business Intelligence • Research Analytics</div>
         <div className="toplinks">
           {links.map(l => (
             <a
@@ -363,7 +363,7 @@ export default function App() {
           <section className="card">
             <h2>Professional Summary</h2>
             <p>
-              Quantitative Finance specialist with expertise in derivatives pricing, risk modeling, and portfolio optimization. Proven track record building production-grade financial models, implementing advanced statistical methods, and delivering data-driven insights for investment decisions. Strong mathematical foundation with hands-on experience in options pricing, VaR modeling, and algorithmic trading strategies.
+              Data Science and Business Intelligence specialist with expertise in statistical modeling, predictive analytics, and data-driven decision making. Proven track record in developing interactive dashboards, recommendation systems, and advanced analytics solutions across pharmaceutical, automotive, and technology sectors. Strong foundation in machine learning, customer analytics, and research methodologies with published peer-reviewed research.
             </p>
           </section>
 
