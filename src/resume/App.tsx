@@ -68,7 +68,7 @@ const experiences: Experience[] = [
   {
     role: 'Business Intelligence Intern',
     org: 'Hertz Car Sales',
-    location: 'Pleasanton, California, United States',
+    location: 'California, United States',
     start: 'May 2023',
     end: 'Dec 2023',
     bullets: [
@@ -80,7 +80,7 @@ const experiences: Experience[] = [
   {
     role: 'Sales Analyst (Closer)',
     org: 'Bleep-Press (Google Startup)',
-    location: 'Remote',
+    location: 'Cupertino, California, United States',
     start: 'Sep 2022',
     end: 'Dec 2022',
     bullets: [
@@ -363,7 +363,7 @@ export default function App() {
           <section className="card">
             <h2>Professional Summary</h2>
             <p>
-              Data Science and Business Intelligence specialist with expertise in statistical modeling, predictive analytics, and data-driven decision making. Proven track record in developing interactive dashboards, recommendation systems, and advanced analytics solutions across pharmaceutical, automotive, and technology sectors. Strong foundation in machine learning, customer analytics, and research methodologies with published peer-reviewed research.
+              Quantitative Finance specialist with expertise in futures trading, risk modeling, and portfolio optimization, focusing on energy markets and NASDAQ. Proven track record building production-grade financial models in C++ and Python, implementing advanced statistical methods, and delivering data-driven insights for investment decisions. Strong mathematical foundation with hands-on experience in options pricing, VaR modeling, and algorithmic trading strategies. Strong foundation in multithreading strategies.
             </p>
           </section>
 
