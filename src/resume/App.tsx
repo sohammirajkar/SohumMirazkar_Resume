@@ -106,6 +106,17 @@ const experiences: Experience[] = [
 // Updated GitHub + existing highlight projects
 const projects: Project[] = [
   {
+    name: 'Crypto Arbitrage Scanner',
+    stack: 'HTML · JavaScript · Cryptocurrency Trading · Real-time Data · Arbitrage Detection',
+    href: 'https://github.com/sohammirajkar/Crypto_Arbitrage_Scanner',
+    bullets: [
+      'Developed a real-time cryptocurrency arbitrage scanner that detects and identifies profitable trading opportunities across multiple cryptocurrency exchanges',
+      'Implemented algorithms to monitor price discrepancies between exchanges and calculate potential profits after accounting for transaction fees',
+      'Built a responsive web interface to display arbitrage opportunities with real-time updates and sorting capabilities',
+      'Integrated with multiple cryptocurrency exchange APIs to fetch real-time market data for accurate arbitrage detection'
+    ]
+  },
+  {
     name: 'Crack Spread Trading Analysis - Quantitative Energy Market Arbitrage System',
     stack: 'Python · Pandas · NumPy · Matplotlib · Statistical Arbitrage · Technical Analysis · Risk Management',
     href: 'https://github.com/sohammirajkar/Oil_gold_crack_spread_trading_Stra',
