@@ -507,6 +507,13 @@ export default function App() {
                 </a>
               </li>
 
+              <li>
+                <a href="https://drive.google.com/file/d/1qjZj1YQkOTyK5hJ0xm9MSGztZWyketsj/view"
+                  target="_blank" rel="noreferrer">
+                  SEBI Investor Awareness — National Institute of Securities Markets (NISM), Credential ID NISM20250000294044
+                </a>
+              </li>
+
               <li><strong>Wharton Finance Specialization</strong> — Corporate Finance, Valuation</li>
               <li><strong>Options Trading & Risk Management</strong> — Self-Study</li>
             </ul>
